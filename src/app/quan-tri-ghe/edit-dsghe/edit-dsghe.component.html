@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4 mx-auto mb-3">
+            <h2 #title>Thêm Ghế</h2>
+            <input #ten type="text" class="form-control mb-2" placeholder="Tên Ghế" />
+            <input #soGhe type="text" class="form-control mb-2" placeholder="Số Ghế" />
+            <input #gia type="text" class="form-control mb-2" placeholder="Giá" />
+            <input #trangThai type="text" class="form-control mb-2" placeholder="Trạng Thái" />
+            <button (click)="themGheParent(ten.value, soGhe.value, gia.value, trangThai.value )"
+                class="btn btn-primary">Thêm Ghế</button>
+        </div>
+    </div>
+</div>
+<app-danh-sach-ghe></app-danh-sach-ghe>
